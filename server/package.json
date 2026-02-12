@@ -2,6 +2,9 @@
   "name": "wikipedia-tracker-server",
   "version": "1.0.0",
   "description": "Wikipedia Reading Tracker — Backend API + Auth + Public Profile",
+  "engines": {
+    "node": "20.x"
+  },
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
