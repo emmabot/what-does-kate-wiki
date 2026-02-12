@@ -1,0 +1,17 @@
+{
+  "name": "wikipedia-tracker-server",
+  "version": "1.0.0",
+  "description": "Wikipedia Reading Tracker — Backend API + Auth + Public Profile",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.6.2",
+    "cors": "^2.8.6",
+    "express": "^4.22.1",
+    "express-session": "^1.19.0",
+    "resend": "^4.8.0",
+    "uuid": "^10.0.0"
+  }
+}

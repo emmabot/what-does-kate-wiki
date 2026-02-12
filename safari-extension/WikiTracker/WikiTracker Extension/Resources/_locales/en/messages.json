@@ -1,0 +1,11 @@
+{
+  "extension_name": {
+    "message": "Wiki Tracker",
+    "description": "Name of the extension."
+  },
+  "extension_description": {
+    "message": "Automatically tracks Wikipedia articles you read and logs them to your profile.",
+    "description": "Description of the extension."
+  }
+}
+
