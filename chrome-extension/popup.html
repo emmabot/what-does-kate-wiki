@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wikipedia Reading Tracker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Wiki Tracker</h1>
+
+    <div class="status-bar" id="statusBar">
+      <span class="status-dot" id="statusDot"></span>
+      <span id="statusText">Not configured</span>
+    </div>
+
+    <div class="form-group">
+      <label for="apiUrl">API URL</label>
+      <input type="url" id="apiUrl" placeholder="http://localhost:3000">
+    </div>
+
+    <div class="form-group">
+      <label for="apiToken">API Token</label>
+      <input type="text" id="apiToken" placeholder="Paste your API token here">
+    </div>
+
+    <div class="button-group">
+      <button id="saveBtn" class="btn btn-primary">Save</button>
+      <button id="testBtn" class="btn btn-secondary">Test Connection</button>
+    </div>
+
+    <div id="message" class="message hidden"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+
