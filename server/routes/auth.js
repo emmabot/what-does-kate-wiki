@@ -108,7 +108,12 @@ router.get('/token', (req, res) => {
   <div class="token-box" id="token">${user.apiToken}</div>
   <button onclick="navigator.clipboard.writeText(document.getElementById('token').textContent).then(()=>{this.textContent='Copied!'})">Copy Token</button>
   <p class="info">Paste this token into your browser extension to start tracking your Wikipedia reading.</p>
-  <p class="info">Your public profile: <a href="/u/${user.username}">/u/${user.username}</a></p>
+  <div style="margin-top: 24px; padding: 16px; background: #e8f5e9; border-radius: 8px;">
+    <p style="margin: 0 0 8px 0; font-weight: 600; font-size: 0.95rem;">📖 Your public reading profile:</p>
+    <div class="token-box" id="profileUrl">${BASE_URL}/u/${user.username}</div>
+    <button onclick="navigator.clipboard.writeText(document.getElementById('profileUrl').textContent).then(()=>{this.textContent='Copied!'})">Copy URL</button>
+    <p style="margin: 8px 0 0 0; color: #666; font-size: 0.85rem;">Save this link! Share it with friends to show what you've been reading on Wikipedia.</p>
+  </div>
   <p class="info"><a href="/auth/logout">Sign out</a></p>
 </body></html>`);
 });
