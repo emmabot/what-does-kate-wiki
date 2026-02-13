@@ -3,7 +3,7 @@
 
 'use strict';
 
-const DEFAULT_API_URL = 'http://localhost:3000';
+const DEFAULT_API_URL = 'https://what-does-kate-wiki-production.up.railway.app';
 
 const apiUrlInput = document.getElementById('apiUrl');
 const apiTokenInput = document.getElementById('apiToken');
