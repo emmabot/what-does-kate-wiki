@@ -42,7 +42,7 @@ document.getElementById('loginForm').addEventListener('submit', async (e) => {
   e.preventDefault();
   const msg = document.getElementById('message');
   const email = e.target.email.value;
-  msg.className = 'message'; msg.style.display = 'none';
+  msg.className = 'message';
   try {
     const resp = await fetch('/auth/login', {
       method: 'POST',
